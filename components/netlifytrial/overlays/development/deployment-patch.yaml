@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: netlifytrial
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/pshivpuj-tenant/netlifytrial/netlifytrial@sha256:d1432155c1d9a7c42943d526a297e996173820e04d6e42673740dfa16fca6fdc
+        name: my-nodejs
+        resources: {}
+status: {}
