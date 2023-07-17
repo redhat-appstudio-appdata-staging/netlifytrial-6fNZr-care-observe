@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-code-with-quarkus
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/pshivpuj-tenant/netlifytrial/devfile-sample-code-with-quarkus@sha256:ba502e8f8f86e6221d209d8dc4f34b07d9be8f2d641cb8209c64c41db3da76be
+        name: my-java-quarkus
+        resources: {}
+status: {}
